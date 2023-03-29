@@ -1,0 +1,27 @@
+[
+    {
+    "Name": "Ramu",
+    "status": "YES",
+    "protocol": "SFTP"
+    },
+    {
+        "Name": "bunty",
+        "status": "YES",
+        "protocol": "SFTP"
+    },
+    {
+            "Name": "Mahesh",
+            "status": "YES",
+            "protocol": "SFTP"
+            },
+            {
+                "Name": "Avinash",
+                "status": "NO",
+                "protocol": "SFTP"
+                },
+                {
+                    "Name": "Suresh",
+                    "status": "NO",
+                    "protocol": "SFTP"
+                    }
+]   
