@@ -4,7 +4,8 @@ import Dashboard from './Dashboard';
 import Home from './Home';
 
 function App() {
-  const [data1,setdata] = useState([]);
+  const [updata,setupdata] = useState([]);
+  const [downdata,setdowndata]=useState([])
   const getData = ()=>{
     fetch(`data.json`, {
       headers : { 
@@ -14,19 +15,26 @@ function App() {
     })
     .then((response) => response.json())
     .then((data) => {
-      setdata(data)
-      console.log(data1);
+      setupdata(data.filter((val)=>
+      {
+        return val.status==="YES";
+      }));
+      setdowndata(data.filter((val)=>
+      {
+        return val.status==="NO";
+      }));
+
     });  
   }
   useEffect(()=>{
-    getData()
+    getData();
   },[])
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path='/Dashboard' exact element={<Dashboard/>}></Route>
-          <Route path='/' exact element={<Home/>}></Route>
+          <Route path='/Dashboard' exact element={<Dashboard up={updata.length} down={downdata.length}/>}></Route>
+          <Route path='/' exact element={<Home up={updata} down={downdata}/>}></Route>
         </Routes>
       </BrowserRouter>
     </>

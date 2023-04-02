@@ -1,0 +1,25 @@
+#title
+{
+   color:rgb(79, 79, 247) 
+}
+#btn1
+{
+    
+    background-color: rgb(234, 148, 204);
+   
+}
+#btn2
+{
+    background-color: rgb(84, 246, 84);
+   
+}
+#btn3
+{
+    background-color: rgb(224, 56, 56);
+   
+}
+#box1
+{
+   
+box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+}
