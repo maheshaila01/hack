@@ -6,12 +6,12 @@
     },
     {
         "Name": "bunty",
-        "status": "YES",
+        "status": "NO",
         "protocol": "SFTP"
     },
     {
             "Name": "Mahesh",
-            "status": "YES",
+            "status": "NO",
             "protocol": "SFTP"
             },
             {
