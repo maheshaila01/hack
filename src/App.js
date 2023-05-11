@@ -47,7 +47,7 @@ function App() {
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.error(error));
-    }, 20*1000);
+    }, 20*60*1000);
   
     return () => clearInterval(interval);
   },[])
