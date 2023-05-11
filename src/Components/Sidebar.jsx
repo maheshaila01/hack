@@ -14,7 +14,7 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router-dom';
-import { useAppStore } from './appStore';
+import { useAppStore } from '../appStore';
 import { colors } from '@mui/material';
 
 const drawerWidth = 240;
@@ -127,6 +127,26 @@ export default function Sidebar() {
                  <ArrowForwardIcon  />
                 </ListItemIcon>
                 <ListItemText primary="Dashboard" sx={{ color:"green",opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+            </ListItem>
+            <ListItem  disablePadding sx={{ display: 'block' }} onClick = {()=>{navigate("/Confluence")}}>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                 <ArrowForwardIcon  />
+                </ListItemIcon>
+                <ListItemText primary="Confluence" sx={{ color:"green",opacity: open ? 1 : 0 }} />
               </ListItemButton>
             </ListItem>
         </List>

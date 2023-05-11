@@ -1,11 +1,11 @@
-import Navbar from "./Navbar";
-import Sidebar from "./Sidebar";
+import Navbar from "../Components/Navbar";
+import Sidebar from "../Components/Sidebar";
 import { Box } from "@mui/system";
-import './home.css'
+import './home.css';
 import { useState } from "react";
 import { Button } from "bootstrap";
-import UpInfo from "./UpInfo";
-import DownInfo from "./DownInfo";
+import UpInfo from "../UpInfo";
+import DownInfo from "../DownInfo";
 
 const Home = (props) =>{
     const up=props.up;
@@ -51,22 +51,22 @@ const Home = (props) =>{
                                 <h4>Protocol</h4>
                             </div>
                          </div>
-                         <div>
+                         <div >
                             
                                 {
                                    all &&
                                    <div>
                                    <UpInfo up={up}></UpInfo>  
-                                   <DownInfo down={down}></DownInfo>
+                                   <DownInfo down={down} ind={up.length}></DownInfo>
                                   </div>      
                                 }
                                 {
                                     yes &&
-                                    <UpInfo up={up}></UpInfo>  
+                                    <UpInfo up={up} ></UpInfo>  
                                 }
                                 {
                                     no && 
-                                    <DownInfo down={down}></DownInfo>
+                                    <DownInfo down={down} ind={0}></DownInfo>
                                 }
                             
                          </div>

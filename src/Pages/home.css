@@ -1,0 +1,36 @@
+#title
+{
+    margin-right: 150px;
+    color: green;
+    font-size: 52px;
+}
+#btn1
+{
+    border-radius: 100px;
+    width: 80px;
+   
+}
+#btn2
+{
+    border-radius: 100px;
+    width: 80px;
+   
+}
+#btn3
+{
+    border-radius: 100px;
+    width: 80px;
+}
+#btn3:hover{
+    background-color: red;
+}
+#btn2:hover{
+    background-color: green;
+}
+#btn1:hover{
+    background-color: rgb(179, 172, 172);
+}
+#box1
+{
+    /* box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3); */
+}
