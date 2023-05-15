@@ -15,7 +15,6 @@ import ListItemText from '@mui/material/ListItemText';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router-dom';
 import { useAppStore } from '../appStore';
-import { colors } from '@mui/material';
 
 const drawerWidth = 240;
 

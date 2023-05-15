@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { BrowserRouter,Routes, Route } from "react-router-dom";
 import Dashboard from './Pages/Dashboard';
 import Home from './Pages/Home';
-import { json } from "react-router-dom";
 import Confluence from "./Pages/Confluence";
 
 function App() {
