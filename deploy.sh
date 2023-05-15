@@ -6,6 +6,6 @@ npm run build
 
 
 echo "Deploying files to server.."
-scp -r build/* mahesh@192.168.0.102:/var/www/html/build/
+sudo scp -r build/* mahesh@192.168.0.102:/var/www/html/build/
 
 echo "Done!!!"
